@@ -1,8 +1,9 @@
 ## WIN 3D Header
 
-This github repository holds all 3D Header that are used on the win-ci.com website. Below it's explained how to upload new header or update existing ones.\\
-
-
+This github repository holds all 3D Header that are used on the win-ci.com website. Below it's explained how to upload new header or update existing ones.
+\
+\
+\
 ## Overview
 
 1. Access to Repository
@@ -11,11 +12,9 @@ This github repository holds all 3D Header that are used on the win-ci.com websi
 4. Upload header images
 5. Set header images in primic (CMS)
 6. Update already uploaded header images
-
 \
 \
-
-
+\
 ## 1. Access to Repository
 
 To upload headers, you need access to this repository. (https://github.com/madebycru/win). Currently only jonathan@madebycru.com can invite to it, however this will be changed.
