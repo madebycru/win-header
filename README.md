@@ -1,8 +1,6 @@
 ## WIN 3D Header
 
-This github repository holds all 3D Header that are used on the win-ci.com website. Below it's explained how to upload new header or update existing ones.
-
-\
+This github repository holds all 3D Header that are used on the win-ci.com website. Below it's explained how to upload new header or update existing ones.\\
 
 
 ## Overview
