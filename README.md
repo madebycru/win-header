@@ -4,7 +4,6 @@ This github repository holds all 3D Header that are used on the win-ci.com websi
 
 \
 
-\
 
 ## Overview
 
