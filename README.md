@@ -14,13 +14,13 @@ This github repository holds all 3D Header that are used on the win-ci.com websi
 
 
 
-### 1. Access to Repository
+## 1. Access to Repository
 
 To upload headers, you need access to this repository. (https://github.com/madebycru/win). Currently only jonathan@madebycru.com can invite to it, however this will be changed.
 
 
 
-### 2. Folder Structure
+## 2. Folder Structure
 
 The images are structured into the two folders desktop and mobile. 
 
@@ -62,7 +62,7 @@ For the website we **ONLY** use webp due to loading times. Therefore the webp fi
 ```
 
 
-### 3.Prepare header images
+## 3.Prepare header images
 
 Before uploading the headers, we need the sequence in to sizes:
 - 1024px x 1024px
@@ -79,7 +79,7 @@ As an example:
 
 
 
-### 4. Upload header images
+## 4. Upload header images
 
 - Withing the win-header github navigate to the correct folder. 
 	- Example: /desktop/webp
@@ -92,7 +92,7 @@ Do this for mobile and desktop.
 
 
 
-### 5. Set header images in primic (CMS)
+## 5. Set header images in primic (CMS)
 
 To set the header images somewhere on the website you have to login to prismic and navigate to a case and select the tab "3D Teaser".
 
@@ -104,7 +104,7 @@ You need to do 2 things:
 
 
 
-### 6. Update already uploaded header images
+## 6. Update already uploaded header images
 
 To replace existing images just do step **4**. After uploading and commiting the images are replaced. However you will not see them on the website yet. 
 To do so you have to generate the page again:
