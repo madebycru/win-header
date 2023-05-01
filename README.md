@@ -12,12 +12,15 @@ This github repository holds all 3D Header that are used on the win-ci.com websi
 5. Set header images in primic (CMS)
 6. Update already uploaded header images
 
-
+\
+\
 
 ## 1. Access to Repository
 
 To upload headers, you need access to this repository. (https://github.com/madebycru/win). Currently only jonathan@madebycru.com can invite to it, however this will be changed.
 
+\
+\
 
 
 ## 2. Folder Structure
@@ -61,6 +64,8 @@ For the website we **ONLY** use webp due to loading times. Therefore the webp fi
 ├── README.md
 ```
 
+\
+\
 
 ## 3.Prepare header images
 
@@ -78,6 +83,8 @@ As an example:
 - File names: ```_client_name_00000.webp``` ```_client_name_00001.webp``` ...
 
 
+\
+\
 
 ## 4. Upload header images
 
@@ -90,7 +97,8 @@ As an example:
 Do this for mobile and desktop.
 
 
-
+\
+\
 
 ## 5. Set header images in primic (CMS)
 
@@ -102,6 +110,8 @@ You need to do 2 things:
 - In the field ```Product Shot Frame Count``` add the number of frames.
 - Click save and publish.
 
+\
+\
 
 
 ## 6. Update already uploaded header images
