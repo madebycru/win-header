@@ -1,12 +1,31 @@
-name: 'Netlify Deploy'
+name: Netlify Deploy
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+  push:
+    branches: 
+      - main
 
 jobs:
-  build:
+  update:
     runs-on: ubuntu-latest
 
     steps:
-      - name: trigger netlify build
+      - uses: actions/checkout@v2
+        with: 
+          repository: madebycru/win
+          token: ${{ secrets.PRIVATE_TOKEN_GITHUB }}
+          submodules: true
+
+      - name: Pull & update submodules recursively
         run: |
-          curl -X POST -d '{}' https://api.netlify.com/build_hooks/6414343d0ff0ef1ded7d94fe
+          git submodule update --init --recursive
+          git submodule update --recursive --remote
+
+      - name: Commit
+        run: |
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions - update submodules"
+          git add .
+          git commit -am "Update submodules" || echo "No changes to commit"
+          git push curl -X POST -d '{}' https://api.netlify.com/build_hooks/6414343d0ff0ef1ded7d94fe
