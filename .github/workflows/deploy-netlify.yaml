@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches: 
-      - master
+      - main
 
 jobs:
   update:
@@ -28,6 +28,7 @@ jobs:
           git config user.name "GitHub Actions - update submodules"
           git add --all 
           git commit -m "Update submodules" || echo "No changes to commit"
+          git push origin master
       - name: Deploy to Netlify
         run: |
-          git push curl -X POST -d '{}' https://api.netlify.com/build_hooks/6414343d0ff0ef1ded7d94fe
+          curl -X POST -d '{}' https://api.netlify.com/build_hooks/6414343d0ff0ef1ded7d94fe
