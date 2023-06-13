@@ -1,10 +1,10 @@
-name: Netlify Deploy
+name: Update WIN Header
 
 on:
   workflow_dispatch:
   push:
     branches: 
-      - main
+      - master
 
 jobs:
   update:
@@ -26,6 +26,8 @@ jobs:
         run: |
           git config user.email "actions@github.com"
           git config user.name "GitHub Actions - update submodules"
-          git add .
-          git commit -am "Update submodules" || echo "No changes to commit"
+          git add --all 
+          git commit -m "Update submodules" || echo "No changes to commit"
+      - name: Deploy to Netlify
+        run: |
           git push curl -X POST -d '{}' https://api.netlify.com/build_hooks/6414343d0ff0ef1ded7d94fe
