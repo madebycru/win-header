@@ -2,9 +2,6 @@ name: Update WIN Header
 
 on:
   workflow_dispatch:
-  push:
-    branches: 
-      - main
 
 jobs:
   update:
